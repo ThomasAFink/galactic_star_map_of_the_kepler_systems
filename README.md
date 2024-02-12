@@ -69,7 +69,7 @@ ax.scatter(galactic_l, galactic_b, s=0.001, alpha=0.1, color='#fcfcfc', marker='
 
 A figure is created with a subplot for displaying the background image of the Milky Way. Another subplot using the Mollweide projection overlays the Kepler data on top of this background. The subplot for the data is made transparent so the background image is visible. The plot is then customized with labels for Galactic longitude and latitude, a title, and a customized grid. The Kepler data is plotted with small, semi-transparent white dots to represent stars, ensuring the visualization is both informative and visually appealing.
 
+<img src="https://github.com/ThomasAFink/galactic_star_map_of_the_kepler_systems/blob/main/kepler_star_map.png?raw=true" />
+
 ## Conclusion
 This code creates a detailed and visually engaging map of stars observed by the Kepler telescope, plotted over an image of the Milky Way. The transformation of coordinates to the Galactic system and the careful customization of the plot's aesthetics ensure that the visualization is not only scientifically accurate but also accessible and educational for viewers, highlighting the distribution of exoplanet-host
-
-
