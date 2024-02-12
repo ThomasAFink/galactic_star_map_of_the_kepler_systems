@@ -25,7 +25,7 @@ This part of the code customizes the appearance of the plots. It sets the colors
 
 ## Loading the Data and Pre-processing
 ```
-data = plt.imread("kepler/Gaia_EDR3_flux_hammer_8k.png")
+data = plt.imread("Gaia_EDR3_flux_hammer_8k.png")
 kepler_data = pd.read_csv('kepler.csv')
 kepler_data['ra'] = pd.to_numeric(kepler_data['ra'], errors='coerce')
 kepler_data['dec'] = pd.to_numeric(kepler_data['dec'], errors='coerce')
