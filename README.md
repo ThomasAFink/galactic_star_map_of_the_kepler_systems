@@ -44,19 +44,19 @@ for i, row in kepler_data.iterrows():
 ```
 In this loop, each star's coordinates are transformed from the Equatorial system (right ascension and declination) to the Galactic coordinate system (longitude and latitude). This step aligns the stars according to the Milky Way's structure, preparing the data for a galactic-centric visualization.
 
-Given:
+**Given:**
 
 ![Given](https://latex.codecogs.com/png.latex?%5Cinline%20%5Calpha,%20%5Cdelta%3A%20%5Ctext%7BRight%20Ascension%20and%20Declination%20in%20the%20Equatorial%20coordinate%20system.%7D%5C%5C%20%5Calpha_%7BGP%7D,%20%5Cdelta_%7BGP%7D%3A%20%5Ctext%7BRight%20Ascension%20and%20Declination%20of%20the%20North%20Galactic%20Pole%20(NGP).%7D%5C%5C%20l_%7BNCP%7D%3A%20%5Ctext%7BGalactic%20longitude%20of%20the%20North%20Celestial%20Pole%20(NCP).%7D)
 
-Find the angular distance (θ) from the Galactic North Pole (GNP):
+**Find the angular distance (θ) from the Galactic North Pole (GNP):**
 
 ![Angular Distance](https://latex.codecogs.com/png.latex?%5Cinline%20%5Ccos%28%5Ctheta%29%20%3D%20%5Csin%28%5Cdelta_%7BGP%7D%29%20%5Ccdot%20%5Csin%28%5Cdelta%29%20%2B%20%5Ccos%28%5Cdelta_%7BGP%7D%29%20%5Ccdot%20%5Ccos%28%5Cdelta%29%20%5Ccdot%20%5Ccos%28%5Calpha%20-%20%5Calpha_%7BGP%7D%29)
 
-Calculate the Galactic Latitude (b):
+**Calculate the Galactic Latitude (b):**
 
 ![Galactic Latitude](https://latex.codecogs.com/png.latex?%5Cinline%20b%20%3D%2090%5E%5Ccirc%20-%20%5Ctheta)
 
-Compute the Galactic Longitude (l):
+**Compute the Galactic Longitude (l):**
 
 ![Galactic Longitude Sine](https://latex.codecogs.com/png.latex?%5Cinline%20%5Csin%28l%20-%20l_%7BNCP%7D%29%20%3D%20%5Cfrac%7B%5Ccos%28%5Cdelta%29%20%5Ccdot%20%5Csin%28%5Calpha%20-%20%5Calpha_%7BGP%7D%29%7D%7B%5Csin%28%5Ctheta%29%7D)
 
